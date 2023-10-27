@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgba(176, 222, 71, 100); /* Color de fondo del body (distinto al div) 
+    background-image: url('./4-abstract-acrylic-green-brush-stroke-background-3.jpg');*/
+    background-repeat: repeat; 
+    background-size: 800px; /* Tamaño de repetición de la imagen */
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: -40px;
+    margin-bottom: -160px;
+}
+/*
+.glass-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+*/
+
+.nav-bar img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.text-box, .cirled-glass {
+    top: 0;
+    left: 0;
+    margin-right: -75px;
+   /* background-color: rgba(255, 255, 255, 0.7); Color de fondo con opacidad */
+    backdrop-filter: blur(3px); /* Aplicar desenfoque al fondo */
+    z-index: 1; /* Colocar el div encima del fondo */
+    text-align: center; /* Alineación justificada */
+    padding: 20px; /* Espacio interno del div */
+    width: 400px; /* Ancho del div, ajusta según tus necesidades */    
+    border-radius: 30%;
+}
+
+
+.base {
+    position: relative;
+
+    /* Color de fondo del div */
+}
+
+.curved-div {
+    display: flex;
+    justify-content: end;
+    align-items:end;
+    height: 100px;
+    background-color: rgba(7, 135, 58, 100);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 0%);
+}
+.curved-div-alt {
+    height: 100px;
+    background-color: rgba(3, 185, 121, 100);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 0%);
+    margin-top: -30px;
+}
+
+.opposite { 
+    height: 100px;  
+    background-color: rgba(3, 185, 121, 100);
+    clip-path: polygon(0 100%, 0% 0, 100% 100%, 0 100%);
+}
+.opposite-alt { 
+    height: 100px;  
+    background-color: rgba(7, 135, 58, 100);
+    clip-path: polygon(0 100%, 0% 0, 100% 100%, 0 100%);
+}
+
+.presentation {
+    display: flex;
+    height: 350px;
+    align-items: center;
+}
+
+.logo {
+    height: 350px;
+    border-radius: 100%;
+    margin-left: -60px;
+}
+
+.text-presentation {
+    width: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Shrikhand', serif;
+    margin-right: -60px;
+    color: rgba(246, 204, 42, 100);
+    /*color: rgba(252, 209, 45, 100);*/
+   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    */
+}
+
+.text-box h1, h2, p {
+    margin: 0; /* Elimina los márgenes por defecto de los elementos */
+    padding: 0.5px 0; /* Agrega relleno vertical para separar los elementos */
+}
+.text-box h1 {
+    font-size: 50px;
+}
+.text-box h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+}
+.text-box p {
+    font-size: 25px;
+}
+
+.logo-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/*SERVICES*/
+
+/*SWIPER*/
+section{
+    background-color: rgba(3, 185, 121, 100);
+    padding-bottom: 0px;
+}
+.swiper {
+    width: 90%;
+    height: 300px;
+    background-color: rgba(3, 185, 121, 100);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+.swiper-slide{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.swiper-slide img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Hace que la imagen se ajuste y cubra el contenedor */
+}
+.swiper-slide:hover {
+    animation: heartbeat 2.5s ease infinite; /* Aumentar la duración a 2 segundos (puedes ajustarlo) */
+}
+/*SWIPER*/
+/*MODAL*/
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+/*MODAL*/
+  
+.services {
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(249, 180, 1, 100);
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.card{
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+}
+.prev-button, .next-button {
+    margin: 10px;
+  }
+.card h2{
+    color: rgba(18, 91, 80, 100);
+    font-family: 'Shrikhand', serif;
+    padding: 5px;
+}
+.card-img{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+.card-img:hover {
+    animation: heartbeat 2.5s ease infinite; /* Aumentar la duración a 2 segundos (puedes ajustarlo) */
+}
+
+/*CONTACT SECTTION*/
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.links-contact-box {
+    margin: 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 30px;
+
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Roboto Mono', monospace;
+    padding: 15px;
+    color: white;
+}
+.link {
+    font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Roboto Mono', monospace;
+    padding-left: 20px;
+    display: flex;
+    margin: 10px;
+    width: 300px; /* Ancho de tu div */
+    height: 50px; /* Alto de tu div */
+    background-color: rgba(246, 204, 42, 100); /* Color de fondo */
+    border-radius: 50px; /* Radio igual a la mitad del alto */
+
+}
+.links-contact-box img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.links-contact-box-a{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    font-size: 90%;    
+}
+.links-contact-box-a a{
+    color: black; /* Puedes elegir cualquier color que desees */
+    text-decoration: none;
+}
+
+.footer{
+    height: 100px;
+    background-color: rgba(7, 135, 58, 100);
+}
+
+
+
+
+
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    25% {
+        transform: scale(1.1); /* Agranda al 110% */
+    }
+    50% {
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+    75% {
+        transform: scale(1.1); /* Agranda al 110% nuevamente */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+}

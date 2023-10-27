@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Major+Mono+Display&family=Playpen+Sans:wght@600&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Landing Page</title>
+</head>
+<body>
+    <!--PRESENTATION-->
+    <div class="base">
+        
+        <div class="curved-div">
+            <div class="nav-bar">
+                <a href="https://www.instagram.com/bolsonselecto/?next=%2F" target="_blank" rel="noopener noreferrer">
+                    <img class="ig-icon" src="instagram.svg" alt=""></a>
+            </div>
+            <div class="nav-bar">
+                <a href="mailto:info@bolsonselecto.com">
+                    <img src="mail.svg" alt=""></a>                
+            </div>
+            <div class="nav-bar">
+                <a id="whatsappLink" href="https://wa.me/5401128291166">
+                    <img src="whatsapp.svg" alt=""></a>                
+            </div>
+        </div>
+
+        <div class="presentation">
+            
+            <div class="text-presentation">
+                <div class="text-box">
+                    <h1>Bolsón Selecto</h1>
+                    <h2>Calidad y Frescura</h2>
+                    <p></p>
+                    
+                </div>
+            </div>
+            <div class="logo-box">
+                <img class="logo" src="./peter-rabbit - copia.jpg" alt="peter-rabbit-circled-png">
+            </div>
+        </div>
+    </div>
+    
+    <!--SERVICES-->
+    <div class="base">
+            <!--triangulo-->
+            <div class="opposite"></div>
+
+            <!-- Slider main container -->
+        <section>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="tomamos pedidos! (3).png" alt="" onclick="openModal(this)"></div>
+                <div class="swiper-slide"><img src="shutterstock_1417051982.jpg" alt="" onclick="openModal(this)"></div>
+                <div class="swiper-slide"><img src="shutterstock_471568904.jpg" alt="" onclick="openModal(this)"></div>
+                <div class="swiper-slide"><img src="WhatsApp Image 2023-10-24 at 6.08.22 PM.jpeg" alt="" onclick="openModal(this)"></div>
+                <div class="swiper-slide"><img src="shutterstock_2068793567.jpg" alt="" onclick="openModal(this)"></div>
+                <div class="swiper-slide"><img src="carrots.jpg" alt="" onclick="openModal(this)"></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" class="modal-content">
+            </div>
+        </section>        
+    </div>
+    <div class="curved-div-alt"></div>
+    <div class="contact-section">
+        <div class="heart-fruit">
+            <img src="fruit-heart.png" alt="">
+        </div>
+        <div class="links-contact-box">
+            <div class="contact-title">
+                <h2>CONTACTANOS</h2>
+            </div>
+            
+            <div class="link">
+                <div class="links-contact-box-img">
+                    <img class="ig-icon" src="instagram.svg" alt="">
+                </div>
+                <div class="links-contact-box-a">
+                    <a href="https://www.instagram.com/bolsonselecto/?next=%2F" target="_blank" rel="noopener noreferrer">
+                    <h3>@bolsonselecto</h3></a>
+                </div>                
+            </div>
+            <div class="link">
+                <div class="links-contact-box-img">
+                    <img src="mail.svg" alt="">
+                </div>
+                <div class="links-contact-box-a">
+                    <a href="mailto:info@bolsonselecto.com"><h3>info@bolsonselecto.com</h3></a>
+                </div>                
+            </div>
+            <div class="link">
+                <div class="links-contact-box-img">
+                    <img src="whatsapp.svg" alt="">
+                </div>
+                <div class="links-contact-box-a">
+                    <a id="whatsappLink" href="https://wa.me/5401128291166">1128291166</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="opposite-alt">
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    
+    <script src="script.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>

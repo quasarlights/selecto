@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "font-awesome": "^4.7.0"
+  },
+  "name": "prueba",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
