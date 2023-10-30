@@ -7,7 +7,7 @@ body {
     background-size: 800px; /* Tamaño de repetición de la imagen */
     background-position: center;
     background-attachment: fixed;
-    margin-top: -40px;
+    margin-top: -20px;
     margin-bottom: -160px;
 }
 /*
@@ -18,24 +18,26 @@ body {
 }
 */
 
-.nav-bar img{
-    height: 30px;
-    width: 30px;
-    margin: 10px;
+
+.nav-bar img {
+    width: 100%;
+    height: auto;    
 }
+
+
+
 .text-box, .cirled-glass {
     top: 0;
     left: 0;
-    margin-right: -75px;
+   /* margin-right: -75px;*/
    /* background-color: rgba(255, 255, 255, 0.7); Color de fondo con opacidad */
-    backdrop-filter: blur(3px); /* Aplicar desenfoque al fondo */
+   /* backdrop-filter: blur(3px);  Aplicar desenfoque al fondo */
     z-index: 1; /* Colocar el div encima del fondo */
     text-align: center; /* Alineación justificada */
     padding: 20px; /* Espacio interno del div */
     width: 400px; /* Ancho del div, ajusta según tus necesidades */    
     border-radius: 30%;
 }
-
 
 .base {
     position: relative;
@@ -50,6 +52,23 @@ body {
     height: 100px;
     background-color: rgba(7, 135, 58, 100);
     clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 0%);
+    padding-bottom: 50px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 40px;
+    border-radius: 30%;
+    background-color: rgba(246, 204, 42, 100); /* Color de fondo */
+    border: 30px;
+    border-color: blueviolet;
+}
+
+.curved-div img{
+
 }
 .curved-div-alt {
     height: 100px;
@@ -69,17 +88,28 @@ body {
     clip-path: polygon(0 100%, 0% 0, 100% 100%, 0 100%);
 }
 
+
 .presentation {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     height: 350px;
     align-items: center;
+    
 }
 
+.logo {    
+    border-radius: 100%;
+}
+.logo-box-movile{
+    display: none;
+}
+/*
 .logo {
     height: 350px;
     border-radius: 100%;
-    margin-left: -60px;
-}
+    max-width: 50%; /* Cambia a max-width *//*
+    margin-left: -2%; /* Cambia el valor de margen izquierdo *//*
+}*/
 
 .text-presentation {
     width: 50%;
@@ -89,34 +119,31 @@ body {
     font-family: 'Shrikhand', serif;
     margin-right: -60px;
     color: rgba(246, 204, 42, 100);
-    /*color: rgba(252, 209, 45, 100);*/
-   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    */
+    
 }
-
 .text-box h1, h2, p {
     margin: 0; /* Elimina los márgenes por defecto de los elementos */
     padding: 0.5px 0; /* Agrega relleno vertical para separar los elementos */
 }
 .text-box h1 {
-    font-size: 50px;
+    font-size: 3.2em;
+    
 }
 .text-box h2 {
     font-family: 'Be Vietnam Pro', sans-serif;
-font-family: 'Major Mono Display', monospace;
-font-family: 'Playpen Sans', cursive;
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     justify-content: center;
     color: white;
 }
-.text-box p {
-    font-size: 25px;
-}
-
 .logo-box {
+    
     width: 50%;
     display: flex;
     justify-content: center;
+    height: 350px;
 }
 
 /*SERVICES*/
@@ -287,7 +314,78 @@ font-family: 'Roboto Mono', monospace;
 }
 
 
+/*MEDYAQUERYS*/
 
+@media screen and (min-width: 800px) and (max-width: 950px){
+    .text-box h1 {
+        font-size: 2em;        
+    }
+    .curved-div img{
+        margin-right: 40px;
+    }
+    .curved-div{        
+        padding-bottom: 50px;
+    }    
+}
+
+@media screen and (max-width: 800px){
+    .nav-bar{        
+        width: 50px;
+        height: 50px;       
+        margin-bottom: 25px;
+    }
+
+    .curved-div{        
+        padding-bottom: 50px;
+        width: 100%;
+    } 
+    .curved-div img{
+        margin-right: 40px;
+    }
+    .presentation{
+        justify-content: center;
+
+    }
+    .text-presentation{
+        width: 100%;
+        justify-content: center;
+        margin: 0px;
+        display: none;
+
+    }
+    .logo-box{
+        display: none;        
+    }
+    .logo-box-movile{
+        display: block;
+    }
+    .logo{
+        height: 500px;
+    }
+    .contact-section {
+        flex-direction: column; /* Cambia a disposición vertical */
+      }
+      .links-contact-box {
+        margin: 10px;
+        width: auto; /* Ancho automático para adaptarse al contenido */
+        height: 330px;
+        border-radius: 0; /* Quita el radio en pantallas más pequeñas */
+        background-color: transparent; /* Fondo transparente en pantallas más pequeñas */
+        position: relative; /* Cambia a posición relativa para superponer el recuadro sobre la imagen */
+        background-image: url('fruit-heart.png');
+        animation: heartbeat 3s ease infinite;
+      }
+      
+      
+      
+    
+      .contact-title {
+        font-size: 25px;
+      }
+      .heart-fruit{
+        display: none;
+    }
+}
 
 
 

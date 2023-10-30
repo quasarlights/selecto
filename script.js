@@ -1,9 +1,14 @@
+window.addEventListener('resize', () => {
+  location.reload(); // Forzar la recarga de la página en cambio de tamaño de pantalla
+});
+
 //CAROUSEL
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: window.innerWidth < 770 ? 1.5 : 3,
+    //slidesPerView: 3,
     spaceBetween: 0,
     // If we need pagination
     pagination: {
@@ -45,3 +50,12 @@ function openModal(image) {
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 } 
+
+/////MEDIA QUERY
+
+wind.addEventListener('resize', ()=>{
+  let myDiv= document.getElementsByClassName('.text-box');  
+  if (window.innerWidth < 770) {
+    myDiv.remove();
+  }
+})
