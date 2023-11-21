@@ -155,6 +155,10 @@ a {
     z-index: 1000;
            
   }
+  .second-offer img{
+    cursor: pointer;
+    
+  }
 
 
 
@@ -441,7 +445,9 @@ font-family: 'Roboto Mono', monospace;
     }
     .second-offer{
         display: none;
+        
        }
+       
     
      .movile-offer{
         display: block;
@@ -450,9 +456,10 @@ font-family: 'Roboto Mono', monospace;
         margin-left: 10px;        
     }
     #add-to-img {
-        width: 130px;
-        height: 130px;
+       
         animation: heartbeat 3s ease infinite;
+        cursor: pointer;
+        
     }
     #add-to-img-pc {
         width: 130px;
