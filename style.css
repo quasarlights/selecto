@@ -30,6 +30,7 @@ a {
 .text-box, .cirled-glass {
     top: 0;
     left: 0;
+    
    /* margin-right: -75px;*/
    /* background-color: rgba(255, 255, 255, 0.7); Color de fondo con opacidad */
    /* backdrop-filter: blur(3px);  Aplicar desenfoque al fondo */
@@ -97,7 +98,7 @@ a {
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     height: 350px;
     align-items: center;
-    
+        
 }
 .miDiv {
     display: none;
@@ -150,9 +151,12 @@ a {
 
   .second-offer{
     display: flex;
-    align-items: end;
+    align-content: end;
     z-index: 1000;
+           
   }
+
+
 
 .logo-box-movile{
     display: none;
@@ -176,6 +180,7 @@ a {
     font-family: 'Shrikhand', serif;
     margin-right: -60px;
     color: rgba(246, 204, 42, 100);
+    position: relative;
     
 }
 .text-box h1, h2, p {
@@ -201,6 +206,9 @@ a {
     display: flex;
     justify-content: center;
     height: 350px;
+}
+.logo-pc{
+    width: 70;
 }
 
 /*SERVICES*/
@@ -427,6 +435,7 @@ font-family: 'Roboto Mono', monospace;
         width: 100%;
         justify-content: center;
         margin: 0px;
+    
         display: none;
 
     }
@@ -439,6 +448,16 @@ font-family: 'Roboto Mono', monospace;
         /*z-index: 2;*/
         margin-top: -130px;
         margin-left: 10px;        
+    }
+    #add-to-img {
+        width: 130px;
+        height: 130px;
+        animation: heartbeat 3s ease infinite;
+    }
+    #add-to-img-pc {
+        width: 130px;
+        height: 130px;
+        animation: heartbeat 3s ease infinite;
     }
   
    #myDobleModalPc, #myDobleModalMovile {
