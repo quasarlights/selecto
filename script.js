@@ -45,11 +45,59 @@ function openModal(image) {
   modal.style.display = "block";
   modalImage.src = image.src;
 }
+// DOBLE MODAL PC
+function openDobleModalPc() {
+  
+  const modal = document.getElementById("myDobleModalPc");
+  modal.style.display = "block";
+  modal.style.zIndex= "1000";
+  // Obtener las imágenes
+  const modalImage1 = document.getElementById("modalImage1pc");
+  const modalImage2 = document.getElementById("modalImage2pc");
+
+  // Configurar las URL de las imágenes
+  const url1 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/4.png";
+  const url2 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/1.png";
+
+  // Establecer las fuentes de las imágenes
+  modalImage1.src = url1;
+  modalImage2.src = url2;
+}
+
+////OPEN DOBLE MODAL MOVILE
+function openDobleModalMovile() {
+  const modal = document.getElementById("myDobleModalMovile");
+  modal.style.display = "block";
+
+  // Obtener las imágenes
+  const modalImage1 = document.getElementById("modalImage1");
+  const modalImage2 = document.getElementById("modalImage2");
+
+  // Configurar las URL de las imágenes
+  const url1 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/5.png";
+  const url2 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/6.png";
+
+  // Establecer las fuentes de las imágenes
+  modalImage1.src = url1;
+  modalImage2.src = url2;
+}
+// Función para cerrar el modal DOBLE MOVILE
+function closeDobleModalMovile() {
+  document.getElementById("myDobleModalMovile").style.display = "none";
+}
+// Función para cerrar el modal DOBLE PC
+function closeDobleModalPc() {
+  const myDobleModalPc=document.getElementById("myDobleModalPc")
+  myDobleModalPc.style.display = "none";
+ //myDobleModalPc.style.zIndex= "2";
+  
+}
 
 // Función para cerrar el modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
-} 
+}
+
 
 /////MEDIA QUERY
 
