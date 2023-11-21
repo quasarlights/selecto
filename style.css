@@ -240,7 +240,7 @@ section{
     display: none;
     position: fixed;
     /*z-index: 1;*/
-    padding-top: 50px;
+    padding-top: 0px;
     left: 0;
     top: 0;
     width: 100%;
@@ -447,6 +447,7 @@ font-family: 'Roboto Mono', monospace;
 
     
     .miDiv {
+        width: 100%;
         height: min-content;
         text-align: center;
         margin: 0 auto;
@@ -460,6 +461,12 @@ font-family: 'Roboto Mono', monospace;
         color: white;
         position: relative;
         z-index: 1; 
+        height: 450px;
+    }
+    .miDivText{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
    
     .logo-box{
@@ -469,6 +476,7 @@ font-family: 'Roboto Mono', monospace;
         display: flex;
         justify-content: center;
        /* z-index: 2;*/
+       position: absolute;
     }
     .logo{
         width: 80%;

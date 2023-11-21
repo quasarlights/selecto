@@ -56,8 +56,8 @@ function openDobleModalPc() {
   const modalImage2 = document.getElementById("modalImage2pc");
 
   // Configurar las URL de las imágenes
-  const url1 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/4.png";
-  const url2 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/1.png";
+  const url1 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/5.png";
+  const url2 = "https://bolson-selecto-bucket.s3.us-east-2.amazonaws.com/6.png";
 
   // Establecer las fuentes de las imágenes
   modalImage1.src = url1;
